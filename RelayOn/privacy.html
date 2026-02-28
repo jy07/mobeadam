@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보처리방침 - RelayOn</title>
+    <meta name="description" content="RelayOn 개인정보처리방침">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .privacy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .privacy-container h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .privacy-container .last-updated {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .privacy-container h2 {
+            font-size: 1.3rem;
+            color: var(--primary-light);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .privacy-container p,
+        .privacy-container li {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 0.75rem;
+        }
+
+        .privacy-container ul {
+            padding-left: 1.5rem;
+        }
+
+        .privacy-container .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-muted);
+        }
+
+        .privacy-container .back-link:hover {
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="privacy-container">
+        <a href="index.html" class="back-link">← 홈으로 돌아가기</a>
+
+        <h1>개인정보처리방침</h1>
+        <p class="last-updated">최종 수정일: 2025년 2월 11일</p>
+
+        <p>Mobeatodam(이하 "개발자")이 제공하는 RelayOn(이하 "앱")은 사용자의 개인정보 보호를 매우 중요하게 생각합니다. 본 개인정보처리방침은 앱이 수집하는 정보와 그 사용 방법을
+            설명합니다.</p>
+
+        <h2>1. 수집하는 정보</h2>
+        <p>RelayOn은 다음 정보를 <strong>기기 내에서만(로컬)</strong> 처리합니다:</p>
+        <ul>
+            <li><strong>알림 데이터:</strong> 앱 이름, 패키지명, 알림 제목, 알림 내용, 수신 시간</li>
+            <li><strong>규칙 설정:</strong> 사용자가 생성한 필터링 규칙 및 액션 설정</li>
+            <li><strong>실행 이력:</strong> 액션 실행 결과 (성공/실패 여부)</li>
+        </ul>
+
+        <h2>2. 권한 사용 목적</h2>
+        <ul>
+            <li><strong>알림 접근 권한 (NotificationListenerService):</strong> 안드로이드 알림을 읽어 사용자가 설정한 규칙에 따라 처리하기 위해 사용됩니다.
+            </li>
+            <li><strong>SMS 발송 권한 (SEND_SMS):</strong> 사용자가 설정한 규칙에 따라 알림 내용을 SMS로 전달하기 위해 사용됩니다.</li>
+            <li><strong>진동 권한 (VIBRATE):</strong> 특정 알림 수신 시 기기를 진동시키기 위해 사용됩니다.</li>
+            <li><strong>인터넷 권한 (INTERNET):</strong> 텔레그램 봇을 통해 메시지를 전달하기 위해 사용됩니다.</li>
+        </ul>
+
+        <h2>3. 데이터 저장 및 전송</h2>
+        <ul>
+            <li>모든 데이터는 <strong>사용자의 기기 내 로컬 데이터베이스</strong>에만 저장됩니다.</li>
+            <li>앱은 개발자의 서버로 어떠한 데이터도 수집하거나 전송하지 않습니다.</li>
+            <li>사용자가 텔레그램 전달 기능을 활성화한 경우, 해당 알림 내용이 텔레그램 API를 통해 사용자가 지정한 채팅방으로 전송됩니다. 이는 사용자의 명시적인 설정에 의해서만 이루어집니다.
+            </li>
+            <li>사용자가 SMS 전달 기능을 활성화한 경우, 해당 알림 내용이 사용자가 지정한 전화번호로 SMS 발송됩니다.</li>
+        </ul>
+
+        <h2>4. 제3자 제공</h2>
+        <p>RelayOn은 사용자의 데이터를 제3자에게 판매, 공유, 또는 제공하지 않습니다.</p>
+
+        <h2>5. 데이터 보관 및 삭제</h2>
+        <ul>
+            <li>알림 데이터 및 실행 이력은 앱 내에서 사용자가 직접 삭제할 수 있습니다.</li>
+            <li>앱을 삭제하면 기기에 저장된 모든 데이터가 자동으로 삭제됩니다.</li>
+        </ul>
+
+        <h2>6. 아동의 개인정보</h2>
+        <p>RelayOn은 13세 미만 아동의 개인정보를 수집하지 않습니다. 13세 미만의 아동이 앱을 사용하는 것을 인지한 경우, 해당 데이터를 즉시 삭제하겠습니다.</p>
+
+        <h2>7. 개인정보처리방침 변경</h2>
+        <p>본 개인정보처리방침은 변경될 수 있으며, 변경 시 본 페이지를 통해 공지합니다.</p>
+
+        <h2>8. 문의</h2>
+        <p>개인정보처리방침에 관한 문의는 아래로 연락해주세요:</p>
+        <ul>
+            <li>이메일: <a href="mailto:mobeatodam@gmail.com">mobeatodam@gmail.com</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
