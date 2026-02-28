@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RelayOn - Smart Notification Relay / 스마트 알림 릴레이</title>
+    <meta name="description"
+        content="RelayOn is a smart notification relay app that detects Android notifications and automatically forwards them via SMS, Telegram, etc. / RelayOn은 안드로이드 알림을 감지하여 SMS, 텔레그램 등으로 자동 전달하는 앱입니다.">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .language-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: var(--bg-secondary, #f8f9fa);
+            border-bottom: 1px solid var(--border-color, #eaeaea);
+        }
+
+        .language-nav a {
+            color: var(--primary-color, #007bff);
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .language-section {
+            padding-bottom: 4rem;
+        }
+
+        .language-divider {
+            height: 1px;
+            background-color: var(--border-color, #eaeaea);
+            margin: 0;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="language-nav">
+        <a href="#english">English (US)</a>
+        <a href="#korean">한국어 (Korean)</a>
+    </div>
+
+    <!-- =============== ENGLISH VERSION =============== -->
+    <div id="english" class="language-section">
+        <!-- Hero Section -->
+        <header class="hero">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <img src="assets/icon.png" alt="RelayOn" class="nav-icon">
+                    <span>RelayOn</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features-en">Features</a>
+                    <a href="#how-it-works-en">How it Works</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </nav>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Never Miss a Notification</h1>
+                    <p class="hero-subtitle">
+                        RelayOn detects your Android notifications<br>
+                        and automatically forwards them to SMS, Telegram, and more.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                                style="vertical-align: middle; margin-right: 8px;">
+                                <path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                            </svg>
+                            Get it on Google Play
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="demo-notification">
+                                <div class="demo-icon">📱</div>
+                                <div class="demo-text">
+                                    <strong>Messages</strong>
+                                    <span>New message received</span>
+                                </div>
+                            </div>
+                            <div class="demo-arrow">▼</div>
+                            <div class="demo-relay">
+                                <div class="relay-item">
+                                    <span class="relay-icon">💬</span>
+                                    <span>Forward to SMS</span>
+                                </div>
+                                <div class="relay-item">
+                                    <span class="relay-icon">✈️</span>
+                                    <span>Send to Telegram</span>
+                                </div>
+                                <div class="relay-item">
+                                    <span class="relay-icon">💾</span>
+                                    <span>Save to DB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Features Section -->
+        <section id="features-en" class="features">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Rule-Based Filtering</h3>
+                    <p>Precisely select notifications by package name, title, or text. Supports Include/Exclude modes
+                        and Regex.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>SMS Forwarding</h3>
+                    <p>Automatically forward important alerts via SMS so you can receive them without mobile data.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✈️</div>
+                    <h3>Telegram Integration</h3>
+                    <p>Instantly send notifications through your Telegram Bot. Configure globally or per-rule.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📳</div>
+                    <h3>Custom Vibration</h3>
+                    <p>Set custom vibration patterns for specific alerts so you notice them immediately.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚫</div>
+                    <h3>Auto-Dismiss</h3>
+                    <p>Automatically clear processed notifications to keep your status bar clean.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Action History</h3>
+                    <p>Store and view logs of all captured notifications and executed actions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works -->
+        <section id="how-it-works-en" class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Create Rules</h3>
+                    <p>Define rules for which notifications to detect and what actions to execute.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Monitor Notifications</h3>
+                    <p>The Android NotificationListenerService monitors your alerts in real-time.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Auto-Execute</h3>
+                    <p>When a rule matches, configured actions like SMS or Telegram forwarding run automatically.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/icon.png" alt="RelayOn" class="footer-icon">
+                    <span>RelayOn</span>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="mailto:mobeatodam@gmail.com">Contact Us</a>
+                </div>
+                <p class="footer-copy">&copy; 2025 Mobeatodam. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <hr class="language-divider">
+
+
+    <!-- =============== KOREAN VERSION =============== -->
+    <div id="korean" class="language-section">
+        <!-- Hero Section -->
+        <header class="hero">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <img src="assets/icon.png" alt="RelayOn" class="nav-icon">
+                    <span>RelayOn</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features-ko">기능</a>
+                    <a href="#how-it-works-ko">사용법</a>
+                    <a href="privacy.html">개인정보처리방침</a>
+                </div>
+            </nav>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>알림을 놓치지 마세요</h1>
+                    <p class="hero-subtitle">
+                        RelayOn은 안드로이드 알림을 감지하여<br>
+                        SMS, 텔레그램 등 원하는 채널로 자동 전달합니다.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                                style="vertical-align: middle; margin-right: 8px;">
+                                <path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                            </svg>
+                            Google Play에서 다운로드
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="demo-notification">
+                                <div class="demo-icon">📱</div>
+                                <div class="demo-text">
+                                    <strong>카카오톡</strong>
+                                    <span>새 메시지가 도착했습니다</span>
+                                </div>
+                            </div>
+                            <div class="demo-arrow">▼</div>
+                            <div class="demo-relay">
+                                <div class="relay-item">
+                                    <span class="relay-icon">💬</span>
+                                    <span>SMS로 전달</span>
+                                </div>
+                                <div class="relay-item">
+                                    <span class="relay-icon">✈️</span>
+                                    <span>텔레그램으로 전달</span>
+                                </div>
+                                <div class="relay-item">
+                                    <span class="relay-icon">💾</span>
+                                    <span>DB에 저장</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Features Section -->
+        <section id="features-ko" class="features">
+            <h2>주요 기능</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>규칙 기반 필터링</h3>
+                    <p>패키지명, 제목, 내용으로 원하는 알림만 정확히 선별합니다. Include/Exclude 세트와 정규식을 지원합니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>SMS 자동 전달</h3>
+                    <p>중요한 알림을 SMS로 자동 전달하여 데이터 없이도 수신할 수 있습니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✈️</div>
+                    <h3>텔레그램 전달</h3>
+                    <p>텔레그램 봇을 통해 알림을 즉시 전달합니다. 글로벌 설정 또는 규칙별 설정이 가능합니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📳</div>
+                    <h3>커스텀 진동</h3>
+                    <p>특정 알림에 대해 맞춤 진동 패턴을 설정하여 즉시 인지할 정 수 있습니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚫</div>
+                    <h3>알림 자동 취소</h3>
+                    <p>처리된 알림을 자동으로 제거하여 상태바를 깔끔하게 유지합니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>이력 관리</h3>
+                    <p>모든 알림과 액션 실행 기록을 저장하고 조회할 수 있습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works -->
+        <section id="how-it-works-ko" class="how-it-works">
+            <h2>어떻게 동작하나요?</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>규칙 생성</h3>
+                    <p>어떤 알림을 감지할지, 어떤 액션을 실행할지 규칙을 정의합니다.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>알림 감지</h3>
+                    <p>안드로이드 NotificationListenerService가 실시간으로 알림을 모니터링합니다.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>자동 실행</h3>
+                    <p>규칙에 매칭되면 SMS 전송, 텔레그램 전달 등 설정된 액션이 자동으로 실행됩니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/icon.png" alt="RelayOn" class="footer-icon">
+                    <span>RelayOn</span>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">개인정보처리방침</a>
+                    <a href="mailto:mobeatodam@gmail.com">문의하기</a>
+                </div>
+                <p class="footer-copy">&copy; 2025 Mobeatodam. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
