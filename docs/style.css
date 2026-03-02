@@ -1,5 +1,7 @@
 /* ===== Reset & Base ===== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -67,7 +69,9 @@ a:hover {
 .nav-icon {
     width: 40px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border);
 }
 
 .nav-links {
@@ -119,8 +123,15 @@ a:hover {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-30px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
 }
 
 .hero-content {
@@ -229,8 +240,15 @@ a:hover {
 }
 
 @keyframes slideIn {
-    from { opacity: 0; transform: translateX(-20px); }
-    to { opacity: 1; transform: translateX(0); }
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .demo-icon {
@@ -260,8 +278,15 @@ a:hover {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(8px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
 }
 
 .demo-relay {
@@ -284,12 +309,24 @@ a:hover {
     animation: fadeIn 0.5s ease-out;
 }
 
-.relay-item:nth-child(2) { animation-delay: 0.2s; }
-.relay-item:nth-child(3) { animation-delay: 0.4s; }
+.relay-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.relay-item:nth-child(3) {
+    animation-delay: 0.4s;
+}
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .relay-icon {
@@ -428,7 +465,8 @@ a:hover {
 .footer-icon {
     width: 28px;
     height: 28px;
-    border-radius: 6px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .footer-links {
@@ -457,23 +495,23 @@ a:hover {
         text-align: center;
         padding: 2rem 1.5rem;
     }
-    
+
     .hero-text h1 {
         font-size: 2.5rem;
     }
-    
+
     .hero-actions {
         justify-content: center;
     }
-    
+
     .nav-links {
         display: none;
     }
-    
+
     .features-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .steps {
         flex-direction: column;
         align-items: center;
@@ -513,7 +551,7 @@ a:hover {
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: 1px solid rgba(0, 206, 201, 0.1);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .usecase-card::before {
@@ -593,4 +631,13 @@ a:hover {
     font-size: 0.8rem;
     font-family: monospace;
     margin: 0 4px;
+}
+
+/* ===== Screenshot Image ===== */
+.screenshot-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;
 }
